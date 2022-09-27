@@ -1,12 +1,20 @@
-// import {
-//   BrowserRouter as Router,
-//   Routes,
-//   Route,
-//   Navigate,
-// } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from 'react-router-dom';
+import Layout from './Page/Layout.jsx';
+import Home from './Home/Home.jsx';
 
 export default function App() {
   return (
-    <div>App</div>
+    <Router>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route index element={<Home />} />
+        </Route>
+      
+      </Routes>
+    </Router>
   );
 }
