@@ -38,6 +38,7 @@ body {
     font-family: var(--primary-font);
     background: var(--background-color);
     color: var(--black-color);
+    
 }
 
 :global(.label-text) {

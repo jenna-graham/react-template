@@ -2,7 +2,8 @@ import styles from './Home.css';
 import { InputControl,
   TextAreaControl,
   SelectControl,
-  CheckboxControl } from '../FormControls/FormControls.jsx';
+  CheckboxControl,
+  FormButton } from '../FormControls/FormControls.jsx';
 
 export default function Home() {
   return <div className={styles.Home}>
@@ -11,6 +12,13 @@ export default function Home() {
         label="Name"
         name="name"
         placeholder="your name"
+      />
+      <InputControl
+        label="Date"
+        required
+        type="date"
+        name="date"
+        placeholder="pick a date"
       />
 
       <TextAreaControl
@@ -30,6 +38,8 @@ export default function Home() {
       </SelectControl>
 
       <CheckboxControl legend="Do you like?" label="Yes" />
+
+      <FormButton text="Submit" />
     </form>
 
   </div>;
