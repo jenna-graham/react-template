@@ -1,5 +1,5 @@
 import styles from './Home.css';
-import { InputControl } from '../FormControls/FormControls';
+import { InputControl, TextAreaControl } from '../FormControls/FormControls';
 
 export default function Home() {
   return <div className={styles.Home}>
@@ -8,6 +8,12 @@ export default function Home() {
         label="Name"
         name="name"
         placeholder="your name"
+      />
+
+      <TextAreaControl
+        label="Tell us more"
+        name="bio"
+        placeholder="tell us about yourself"
       />
     </form>
 

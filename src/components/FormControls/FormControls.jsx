@@ -19,3 +19,12 @@ export function InputControl({ label, ...rest }) {
     </FormControl>
   );
 }
+export function TextAreaControl({ label, ...rest }) {
+  return (
+    <FormControl label={label}>
+      <textarea {...rest} />
+    </FormControl>
+  );
+}
+
+
