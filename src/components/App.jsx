@@ -24,7 +24,6 @@ export default function App() {
             <Route path="shoes" element={<Shoes />} />
           </Route>
         </Route>
-      
       </Routes>
     </Router>
   );
